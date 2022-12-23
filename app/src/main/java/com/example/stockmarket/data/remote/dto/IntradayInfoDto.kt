@@ -1,6 +1,6 @@
 package com.example.stockmarket.data.remote.dto
 
-data class IntradayDto(
+data class IntradayInfoDto(
     val timeStamp: String,
     val close: Double
 )
