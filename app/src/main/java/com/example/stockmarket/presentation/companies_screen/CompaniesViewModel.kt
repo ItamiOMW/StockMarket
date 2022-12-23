@@ -55,10 +55,17 @@ class CompaniesViewModel @Inject constructor(
             repository.getCompaniesList(getFromRemote, query).collect { response ->
                 when (response) {
                     is Resource.Success -> {
-                        response.data?.let { list -> _state = state.copy(companiesList = list) }
+                        response.data?.let { list -> _state = state.copy(
+                            companiesList = list,
+                            error = null,
+                            isLoading = false
+                        ) }
                     }
                     is Resource.Error -> {
-                        _state = state.copy(error = response.message)
+                        _state = state.copy(
+                            error = response.message,
+                            isLoading = false
+                        )
                     }
                     is Resource.Loading -> {
                         _state = state.copy(isLoading = response.isLoading)

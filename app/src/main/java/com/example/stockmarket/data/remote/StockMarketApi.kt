@@ -45,7 +45,7 @@ interface StockMarketApi {
         private const val QUERY_COMPANY_LIST = "query?function=LISTING_STATUS"
 
         //QUERY FOR INTRADAY INFO
-        private const val QUERY_INTRADAY_INFO = "query?function=TIME_SERIES_INTRADAY&interval=60min"
+        private const val QUERY_INTRADAY_INFO = "query?function=TIME_SERIES_INTRADAY&interval=60min&datatype=csv"
 
         //QUERY FOR COMPANY INFO
         private const val QUERY_COMPANY_INFO = "query?function=OVERVIEW"
