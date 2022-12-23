@@ -1,5 +1,6 @@
 package com.example.stockmarket.data.remote
 
+import com.example.stockmarket.data.remote.dto.CompanyInfoDto
 import okhttp3.ResponseBody
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -7,7 +8,7 @@ import retrofit2.http.Query
 interface StockMarketApi {
 
     @GET(QUERY_COMPANY_LIST)
-    suspend fun getListings(
+    suspend fun getCompanies(
         @Query(API_KEY_PARAM) apikey: String = API_KEY_VALUE,
     ): ResponseBody
 
@@ -23,7 +24,7 @@ interface StockMarketApi {
     suspend fun getCompanyInfo(
         @Query(SYMBOL_PARAM) symbol: String,
         @Query(API_KEY_PARAM) apikey: String = API_KEY_VALUE,
-    ): ResponseBody
+    ): CompanyInfoDto
 
 
     companion object {
