@@ -3,4 +3,5 @@
     <string name="failed_attempt_data">Failed attempt to upload data</string>
     <string name="failed_attempt_company_info">Failed attempt to upload company info</string>
     <string name="failed_attempt_intraday">Failed attempt to upload company intraday</string>
+    <string name="search">Search...</string>
 </resources>
