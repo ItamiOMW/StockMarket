@@ -10,7 +10,8 @@ private val DarkColorPalette = darkColors(
     primary = Color.Green,
     background = DarkBlue,
     onPrimary = Color.DarkGray,
-    onBackground = TextWhite
+    onBackground = TextWhite,
+
 )
 
 

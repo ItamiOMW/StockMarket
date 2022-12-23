@@ -55,11 +55,11 @@ class StockMarketRepositoryImpl @Inject constructor (
                 companyCSVParser.parse(response.byteStream())
             } catch (e: IOException) {
                 e.printStackTrace()
-                emit(Resource.Error(application.getString(R.string.failed_attempt_data)))
+                emit(Resource.Error(application.getString(R.string.failed_attempt_companies)))
                 null
             } catch (e: HttpException) {
                 e.printStackTrace()
-                emit(Resource.Error(application.getString(R.string.failed_attempt_data)))
+                emit(Resource.Error(application.getString(R.string.failed_attempt_companies)))
                 null
             }
 
