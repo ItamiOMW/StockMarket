@@ -26,7 +26,7 @@
 
 - Detail screen with the info and chart of intraday trading.
 
-#Idea
+# Idea
 I took the idea from Philip [https://www.youtube.com/watch?v=uLs2FxFSWU4&ab_channel=PhilippLackner]
 for the purpose of practicing Jetpack Compose. 
 Firstly, i watched the video, then i made the application myself, except for the chart.
