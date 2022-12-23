@@ -11,4 +11,10 @@ abstract class StockMarketDatabase : RoomDatabase() {
 
     abstract fun dao(): StockMarketDao
 
+    companion object {
+
+        const val DB_NAME = "stock_market.db"
+
+    }
+
 }

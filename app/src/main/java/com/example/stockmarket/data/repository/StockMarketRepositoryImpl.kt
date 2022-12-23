@@ -17,8 +17,11 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class StockMarketRepositoryImpl(
+@Singleton
+class StockMarketRepositoryImpl @Inject constructor (
     private val api: StockMarketApi,
     private val dao: StockMarketDao,
     private val application: Application,
